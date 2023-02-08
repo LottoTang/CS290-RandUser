@@ -1,0 +1,143 @@
+/*   ----- Imports  -----  */     
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;800&display=swap');
+
+body {
+    background-color: #ecf2f8;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 350px;
+    padding: 0;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #BFBCF8;
+    padding: 50px;
+}
+
+header {
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9))
+    ,url('./background.jpg');
+}
+
+footer {
+    margin-top: auto;
+}
+
+h1 {
+    color: #17263df1;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+h2, h3 {
+    color: #48556a;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+hr {
+    border: dotted 5px;
+    border-bottom: none;
+    margin: 25px auto;
+    opacity: 50%;
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    background-color: #BFBCF8;
+    cursor: pointer;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 20px;
+    padding: 25px;
+    min-width: 200px;
+}
+
+button:hover {
+    opacity: 70%;
+    transform: scale(1.1);
+}
+
+.disclaimer {
+    font-style: italic;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.result-container:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+}
+
+.result-container:nth-child(odd) {
+    background-color:#BFBCF8;
+}
+
+.result-container:nth-child(even) {
+    background-color:#d9e1e9;
+}
+
+
+.info-photo {
+    margin-left: 20px;
+    border: 1px solid rgba(104, 102, 102, 0.24);
+    border-radius: 5px;
+}
+
+.info-string {
+    margin-left: 15px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+
+@media (min-width: 576px) {
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .result-container {
+        margin-left: 20vw;
+        width: 60%;
+    }
+    
+    .info-string {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+}
+

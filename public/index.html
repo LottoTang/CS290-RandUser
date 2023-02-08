@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RandUser - User Generator</title>
+    <!-- (Optional) Link to an existing or new stylesheet 
+        that includes rules for at least these selectors:
+        body, header, main, footer, button, and div.
+    -->
+    <link rel="stylesheet" href="./App.css">
+    <script src="random.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Add a header with heading 1 to name the app. -->
+    <header>
+        <h1>RandUser</h1>
+        <h2>Virtual User Generator</h2>
+    </header>
+        <!-- Add a main area with a paragraph describing the app's purpose and to instruct the user.-->
+    <main>
+        <article>
+            <h2>Generate virtual user data in one click</h2>
+            <!-- Add buttons to the main area for the user to execute the two different ways to call the API. -->
+            <div id="button-container">
+                <p>Generate data through either one of the options: </p>
+                <button id="call-browser" value="call from server">via Browser Directly</button>
+                <button id="call-express" value="call from express">via Express Server</button>
+                <hr>
+            </div>
+            <div>
+                <h3>Generated result(s): </h3>
+                <!-- Add a division tag to the main area to render the random data. -->
+                <div id="data"></div>
+            </div>
+            <hr>
+        </article>
+    </main>
+        
+    <!-- Add a footer with paragraph that provides a copyright statement. -->
+    <footer>
+        <p class="disclaimer">Disclaimer: Random person data is fetched and provided from 
+            <a href=" https://randomuser.me/" target="_blank">Random User Generator</a></p>
+        <p>&copy; 2022 Long To Lotto Tang</p>
+    </footer>
+</body>
+
+</html>
