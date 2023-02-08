@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.mjs",
   "scripts": {
-    "start": "node server.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "react-scripts build"
+    "start": "nodemon server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
